@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Limex_HelloMagento::hellomagento" title="Limex Modules" module="Limex_HelloMagento" sortOrder="51" resource="Limex_HelloMagento::hellomagento"/>
+		
+        <add id="Limex_HelloMagento::post" title="Manage Posts" module="Limex_HelloMagento" sortOrder="10" action="limex_hellomagento/post" resource="Limex_HelloMagento::post" parent="Limex_HelloMagento::hellomagento"/>
+		
+		
+        <add id="Limex_HelloMagento::hello_configuration" title="Configuration" module="Limex_HelloMagento" sortOrder="99" parent="Limex_HelloMagento::hellomagento" action="adminhtml/system_config/edit/section/hellomagento" resource="Limex_HelloMagento::hellomagento_configuration"/>
+    </menu>
+</config>
